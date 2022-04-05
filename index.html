@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork4</title>
+</head>
+<body>
+    <script>
+        let height = prompt('Введите высоту ёлки');
+        let i = 0, a = 0;
+
+        while (i < height) {
+            space = "";
+            star = "";
+
+            for (a = 0; a < height - i; a++) space += " "; {
+                for (a = 0; a < 2 * i + 1; a++) star += "*";
+            }
+            console.log(space + star);
+            alert(space + star)
+            i++;
+        }
+    </script>
+</body>
+</html>
