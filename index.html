@@ -10,18 +10,21 @@
     <script>
         let height = prompt('Введите высоту ёлки');
         let i = 0, a = 0;
+        let string = ''
 
         while (i < height) {
-            space = "";
-            star = "";
+            space = '';
+            star = '';
 
-            for (a = 0; a < height - i; a++) space += " "; {
-                for (a = 0; a < 2 * i + 1; a++) star += "*";
+            for (a = 0; a < height - i; a++) space += ' '; {
+                for (a = 0; a < 2 * i + 1; a++) star += '*';
+                string += `${space}${star}\n`;
             }
-            console.log(space + star);
-            alert(space + star)
+            
             i++;
         }
+        alert(string)
+
     </script>
 </body>
 </html>
